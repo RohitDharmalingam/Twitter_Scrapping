@@ -58,7 +58,7 @@ st.download_button(
         )
 export_button = st.button(label="export")
 now = datetime.datetime.now()
-client = pymongo.MongoClient("mongodb+srv://bhaarani:bharani09@cluster0.99c2qfp.mongodb.net/?retryWrites=true&w=majority")
+client = pymongo.MongoClient("")
 db = client.Twitterdata
 records = db.search
 for i, tweet in enumerate(
